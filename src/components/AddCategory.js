@@ -11,7 +11,7 @@ const AddCategory = ( { setCategories} ) =>{
     const handleSubmit = (e) => {
         e.preventDefault()
         if(inputValue.trim().length > 0 ){
-            setCategories( catego => [...catego, inputValue])
+            setCategories( catego => [inputValue])
         }else{
             alert('Digite un valor valido no puede esatr vacio')
         }
